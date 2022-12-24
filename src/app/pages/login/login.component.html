@@ -1,0 +1,22 @@
+<div>
+  <div class="text-center">
+    <h2 class="h2"> Login</h2>
+  </div>
+  <form class="row g-3">
+    <div class="col-md-4">
+      <label class="form-label" for="input-email">Email</label>
+      <input name="email" class="form-control" class="form-control" [(ngModel)]="email" type="email" id="input-email">
+    </div>
+
+    <div class="col-md-4">
+      <label class="form-label" for="input-cpf">Cpf</label>
+      <input name="cpf" class="form-control" [(ngModel)]="cpf" type="text" id="input-cpf" placeholder="111.111.111.-11">
+    </div>
+
+    <div class="col-md-4">
+      <label class="form-label" for="input-mesa">Mesa</label>
+      <input name="mesa" class="form-control" [(ngModel)]="mesa" type="number" id="input-mesa">
+    </div>
+    <button (click)="navigar()" type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>

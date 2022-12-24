@@ -1,0 +1,15 @@
+<section>
+  <div *ngFor="let prato of pratos" class="card" style="width: 18rem;">
+    <img src="{{prato.image}}" class="card-img-top" alt="{{prato.nome}}">
+    <div class="card-body">
+      <h5 class="card-title">{{prato.nome}}</h5>
+      <p>{{prato.preco}}</p>
+      <p class="card-text">{{prato.categotia}}</p>
+      <p>{{prato.status}}</p>
+      <button (click)="adicionarPrato(prato)">Adicionar Pedido</button>
+      <button (click)="removerPrato(prato)">remover prato</button>
+    </div> 
+  </div> 
+  <button (click)="fazerPedido()">Fazer Pedido</button>
+</section>
+

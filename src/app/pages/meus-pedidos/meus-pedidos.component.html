@@ -1,0 +1,22 @@
+<div>
+  <h1> Resumo de Pedidos</h1>
+  <table>
+    <tr>
+      <th>id</th>
+      <th>valor total</th>
+      <th>prato</th>
+      <th>status</th>
+      <th>tempo estimado</th>
+      <th>cliente</th>
+    </tr>
+
+    <tr *ngFor="let pedido of pedidos;">
+      <th>{{ pedido.id}}</th>
+      <th>{{ pedido.valor_total}}</th>
+      <th>{{ pedido.prato_id}}</th>
+      <th>{{ pedido.status}}</th>
+      <th>{{ pedido.tempo}}</th>
+      <th>{{ pedido.cliente_id}}</th>
+    </tr>
+  </table>
+</div>
